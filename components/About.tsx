@@ -33,7 +33,7 @@ const About = () => {
           seamless user experiences, I excel in creating dynamic and responsive
           web applications. My expertise lies in designing sleek interfaces and
           implementing efficient backend solutions. With a proven track record
-          of delivering high-quality projects on time and within budget, I'm
+          of delivering high-quality projects on time and within budget,{" I'm"}
           committed to staying ahead of the curve with the latest technologies.
           {"Let's"} collaborate to elevate your digital presence and drive your
           business growth.
