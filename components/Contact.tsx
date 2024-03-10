@@ -5,8 +5,9 @@ import { Textarea } from "./ui/textarea";
 import { Input } from "./ui/input";
 
 const Contact = () => {
-  const [Subject, setSubject] = useState<SetStateAction>();
-  const [Message, setMessage] = useState<SetStateAction>();
+  const [Subject, setSubject] = useState<string>("");
+  const [Message, setMessage] = useState<string>("");
+
   const handleForm = (e: FormEvent) => {
     e.preventDefault();
   };
@@ -29,7 +30,9 @@ const Contact = () => {
             placeholder="Type Your Subject"
             className="w-96 outline-none py-4"
             value={Subject}
-            onChange={(e) => setSubject(e.target.value)}
+            onChange={(e: FormEvent<HTMLInputElement>) =>
+              setSubject(e.currentTarget.value)
+            }
           />
         </div>
         <div className="py-5">
@@ -40,7 +43,9 @@ const Contact = () => {
             placeholder="Type your message here."
             id="message"
             value={Message}
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={(e: FormEvent<HTMLTextAreaElement>) =>
+              setMessage(e.currentTarget.value)
+            }
           />
         </div>
         <div>

@@ -26,16 +26,16 @@ const About = () => {
       </motion.section>
       <motion.section className="px-8 text-justify lg:w-[100rem]">
         <p>
-          I'm <span className="font-semibold text-lg ">Aditya Zende</span>, a
-          seasoned full stack web developer specializing in HTML, CSS, Tailwind
-          CSS, Bootstrap, JavaScript, React.js, Next.js, TypeScript, and
-          MongoDB. With a keen eye for detail and a passion for crafting
+          {"I'm"} <span className="font-semibold text-lg ">Aditya Zende</span>,
+          a seasoned full stack web developer specializing in HTML, CSS,
+          Tailwind CSS, Bootstrap, JavaScript, React.js, Next.js, TypeScript,
+          and MongoDB. With a keen eye for detail and a passion for crafting
           seamless user experiences, I excel in creating dynamic and responsive
           web applications. My expertise lies in designing sleek interfaces and
           implementing efficient backend solutions. With a proven track record
           of delivering high-quality projects on time and within budget, I'm
           committed to staying ahead of the curve with the latest technologies.
-          Let's collaborate to elevate your digital presence and drive your
+          {"Let's"} collaborate to elevate your digital presence and drive your
           business growth.
         </p>
       </motion.section>
