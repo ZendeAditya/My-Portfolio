@@ -5,6 +5,7 @@ import Image from "next/image";
 import MyImg from "@/public/MyImg.jpeg";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { CiMail } from "react-icons/ci";
 import Link from "next/link";
 const Hero = () => {
   const ref = useRef(null);
@@ -58,7 +59,12 @@ const Hero = () => {
             whileHover={{ color: "blue" }}
             transition={{ delay: 0.5 }}
           >
-            <FaFacebookSquare size={30} className="dark:text-white" />
+            <Link
+              href="https://www.facebook.com/profile.php?id=100072325087800"
+              target="_blank"
+            >
+              <FaFacebookSquare size={30} className="dark:text-white" />
+            </Link>
           </motion.li>
           <motion.li
             initial={{ opacity: 0 }}
@@ -66,7 +72,9 @@ const Hero = () => {
             whileHover={{ color: "blue" }}
             transition={{ delay: 1 }}
           >
-            <BsTwitter size={30} className="dark:text-white" />
+            <Link href="https://twitter.com/adidev_23" target="_blank">
+              <BsTwitter size={30} className="dark:text-white" />
+            </Link>
           </motion.li>
           <motion.li
             initial={{ opacity: 0 }}
@@ -74,7 +82,12 @@ const Hero = () => {
             whileHover={{ color: "blue" }}
             transition={{ delay: 1.5 }}
           >
-            <BsLinkedin size={30} className="dark:text-white" />
+            <Link
+              href="https://www.linkedin.com/in/adityazende/"
+              target="_blank"
+            >
+              <BsLinkedin size={30} className="dark:text-white" />
+            </Link>
           </motion.li>
           <motion.li
             initial={{ opacity: 0 }}
@@ -82,7 +95,19 @@ const Hero = () => {
             whileHover={{ color: "black" }}
             transition={{ delay: 2 }}
           >
-            <BsGithub size={30} className="dark:text-white" />
+            <Link href="https://github.com/ZendeAditya" target="_blank">
+              <BsGithub size={30} className="dark:text-white" />
+            </Link>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            whileHover={{ color: "black" }}
+            transition={{ delay: 2 }}
+          >
+            <a href="mailto:adityazende6710@gmail.com" target="_blank">
+              <CiMail size={30} className="dark:text-white" />
+            </a>
           </motion.li>
         </motion.ul>
         <div className="flex items-center justify-center p-3">
